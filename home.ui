@@ -1,0 +1,3953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1028</width>
+    <height>698</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>OPCPA EPS Overview</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;TITLE&quot;:&quot;System Overview&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>./widgets/header.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1,1">
+     <property name="spacing">
+      <number>15</number>
+     </property>
+     <property name="leftMargin">
+      <number>9</number>
+     </property>
+     <property name="topMargin">
+      <number>9</number>
+     </property>
+     <property name="rightMargin">
+      <number>9</number>
+     </property>
+     <property name="bottomMargin">
+      <number>9</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="Col1" stretch="5,7,7">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="PLC">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>2</horstretch>
+           <verstretch>3</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>PLC</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,1,1,1">
+          <item>
+           <layout class="QFormLayout" name="formLayout">
+            <property name="formAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="horizontalSpacing">
+             <number>6</number>
+            </property>
+            <item row="0" column="1">
+             <widget class="PyDMLabel" name="PyDMLabel_20">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:PLC:AMS_ID_RBV</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>AMS Net ID:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="Master">
+            <item>
+             <widget class="PyDMByteIndicator" name="MasterStatus">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:PLC:MASTER_OK_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Master</string>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="Slaves">
+            <item>
+             <widget class="PyDMByteIndicator" name="SlavesStatus">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:PLC:SLAVES_OK_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_2">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Slaves</string>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="PyDMRelatedDisplayButton" name="PLCAdminButton">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>PLC Admin...</string>
+            </property>
+            <property name="filenames" stdset="0">
+             <stringlist>
+              <string>./plc_admin.ui</string>
+             </stringlist>
+            </property>
+            <property name="macros" stdset="0">
+             <stringlist>
+              <string>{&quot;PV&quot;:&quot;ca://HPO:LPS:PLC&quot;}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="Interlocks">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Interlocks</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="PyDMByteIndicator" name="AmphosAttenuatorStatus">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS_ATTENUATOR:ENABLE_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="AmphosAttenuatorLbl">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Amphos Attenuator Enable</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="PyDMByteIndicator" name="AmphosShutterStatus">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS_SHUTTER:ENABLE_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="AmphosShutterLbl">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Amphos Shutter Enable</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <widget class="PyDMByteIndicator" name="CarbideShutterStatus">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:CARBIDE_SHUTTER:ENABLE_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="CarbideShutterLbl">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Carbide Shutter Enable</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:DUMP_CHILLER_RELAY:ENABLE_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_22">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Beam Dump Chiller Relay</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_19">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:BASEPLATE_CHILLER_RELAY:ENABLE_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_23">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Baseplate Chiller Relay</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_20">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_19">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS_RELAY:ENABLE_RBV</string>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_18">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Amphos Relay</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="ChillerLoops">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>3</horstretch>
+           <verstretch>5</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Chiller Loops</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0,0,0">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Overtemperature Monitored Locations:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_24">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP01:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_27">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Loop 01:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_21">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP01:LOC</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_4">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>OVERRIDE ON</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::PlainText</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="openExternalLinks">
+               <bool>false</bool>
+              </property>
+              <property name="rules" stdset="0">
+               <string>[{&quot;name&quot;: &quot;Visible when override on&quot;, &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://HPO:LPS:TEMP01:OVERRIDE_RBV&quot;, &quot;trigger&quot;: true}]}]</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP02:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_28">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Loop 02:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_24">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP02:LOC</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_5">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <property name="text">
+               <string>OVERRIDE ON</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::PlainText</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="openExternalLinks">
+               <bool>false</bool>
+              </property>
+              <property name="rules" stdset="0">
+               <string>[{&quot;name&quot;: &quot;Visible when override on&quot;, &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://HPO:LPS:TEMP02:OVERRIDE_RBV&quot;, &quot;trigger&quot;: true}]}]</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP03:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_29">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Loop 03:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_25">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP03:LOC</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_55">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>OVERRIDE ON</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::PlainText</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="openExternalLinks">
+               <bool>false</bool>
+              </property>
+              <property name="rules" stdset="0">
+               <string>[{&quot;name&quot;: &quot;Visible when override on&quot;, &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://HPO:LPS:TEMP03:OVERRIDE_RBV&quot;, &quot;trigger&quot;: true}]}]</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_21">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_20">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP04:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_30">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Loop 04:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_26">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMP04:LOC</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_56">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+                <underline>false</underline>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="text">
+               <string>OVERRIDE ON</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::PlainText</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="openExternalLinks">
+               <bool>false</bool>
+              </property>
+              <property name="rules" stdset="0">
+               <string>[{&quot;name&quot;: &quot;Visible when override on&quot;, &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://HPO:LPS:TEMP04:OVERRIDE_RBV&quot;, &quot;trigger&quot;: true}]}]</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="PyDMRelatedDisplayButton" name="ChillerLoopExpert">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Expert...</string>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="filenames" stdset="0">
+             <stringlist>
+              <string>./chiller_loop_expert.ui</string>
+              <string>./chiller_loop_expert.ui</string>
+              <string>./chiller_loop_expert.ui</string>
+              <string>./chiller_loop_expert.ui</string>
+             </stringlist>
+            </property>
+            <property name="titles" stdset="0">
+             <stringlist>
+              <string>Loop 01</string>
+              <string>Loop 02</string>
+              <string>Loop 03</string>
+              <string>Loop 04</string>
+             </stringlist>
+            </property>
+            <property name="macros" stdset="0">
+             <stringlist>
+              <string>{&quot;DEVICE&quot;:&quot;Loop 01&quot;,&quot;PV&quot;:&quot;ca://HPO:LPS:TEMP01&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Loop 02&quot;,&quot;PV&quot;:&quot;ca://HPO:LPS:TEMP02&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Loop 03&quot;,&quot;PV&quot;:&quot;ca://HPO:LPS:TEMP03&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Loop 04&quot;,&quot;PV&quot;:&quot;ca://HPO:LPS:TEMP04&quot;}</string>
+             </stringlist>
+            </property>
+            <property name="openInNewWindow" stdset="0">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="Col2" stretch="4,3,10">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="Lasers">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>3</horstretch>
+           <verstretch>3</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Lasers</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,1,1">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_35">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Amphos:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_57">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS:POWER_STATE_RBV</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string notr="true">ca://HPO:LPS:AMPHOS:VOLTAGE_RBV</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="PyDMPushButton" name="PyDMPushButton_4">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Latch Reset</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS:RESET</string>
+              </property>
+              <property name="showConfirmDialog" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="confirmMessage" stdset="0">
+               <string>Are you sure you want to reset Amphos error?</string>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_34">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>20</horstretch>
+                <verstretch>20</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:OPCPA:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>OPCPA:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_58">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:OPCPA:POWER_STATE_RBV</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string notr="true">ca://HPO:LPS:OPCPA:VOLTAGE_RBV</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="PyDMPushButton" name="PyDMPushButton_5">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Latch Reset</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:OPCPA:RESET</string>
+              </property>
+              <property name="showConfirmDialog" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="confirmMessage" stdset="0">
+               <string>Are you sure you want to reset OPCPA error?</string>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Expert...</string>
+            </property>
+            <property name="filenames" stdset="0">
+             <stringlist>
+              <string>./laser_expert.ui</string>
+              <string>./laser_expert.ui</string>
+             </stringlist>
+            </property>
+            <property name="titles" stdset="0">
+             <stringlist>
+              <string>Amphos</string>
+              <string>OPCPA</string>
+             </stringlist>
+            </property>
+            <property name="macros" stdset="0">
+             <stringlist>
+              <string>{&quot;DEVICE&quot;:&quot;Amphos&quot;,&quot;PV&quot;:&quot;ca://HPO:LPS:AMPHOS&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;OPCPA&quot;,&quot;PV&quot;:&quot;ca://HPO:LPS:OPCPA&quot;}</string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="ChillerFlowSensors">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Chiller Flow Sensors</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:DUMP_CHILLER:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_59">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Beam Dump Chiller</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="PyDMPushButton" name="PyDMPushButton_2">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Latch Reset</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:DUMP_CHILLER:RESET</string>
+              </property>
+              <property name="showConfirmDialog" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="confirmMessage" stdset="0">
+               <string>Are you sure you want to reset the beam dump chiller error?</string>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string notr="true">1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_40">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:BASEPLATE_CHILLER:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_60">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Baseplate Chiller</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="PyDMPushButton" name="PyDMPushButton_3">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Latch Reset</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:BASEPLATE_CHILLER:RESET</string>
+              </property>
+              <property name="showConfirmDialog" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="confirmMessage" stdset="0">
+               <string>Are you sure you want to reset the Baseplate Chiller error?</string>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string notr="true">1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="TemperatureMonitor">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>3</horstretch>
+           <verstretch>9</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Temperature Monitors</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_32">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_21">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON01:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_32">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 01:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_31">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON01:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_19">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON01_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_31">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_22">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON02:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_34">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 02:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_33">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON02:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_47">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON02_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_30">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_23">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON03:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_36">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 03:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_35">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON03:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_48">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON03_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_29">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_24">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON04:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_38">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 04:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_37">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON04:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_50">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON04_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_28">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_25">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON05:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_40">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 05:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_39">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON05:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_51">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON05_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_27">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_26">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON06:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_42">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 06:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_41">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON06:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_52">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON06_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_26">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_27">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON07:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_44">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 07:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_43">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON07:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_53">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON07_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_25">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_28">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON08:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_46">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Sensor 08:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_45">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON08:LOC</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_54">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="showUnits" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:TEMPMON08_RBV</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="PyDMRelatedDisplayButton" name="TempMonExpert">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Expert...</string>
+            </property>
+            <property name="filenames" stdset="0">
+             <stringlist>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+              <string>./temp_monitor_expert.ui</string>
+             </stringlist>
+            </property>
+            <property name="titles" stdset="0">
+             <stringlist>
+              <string>Sensor 01</string>
+              <string>Sensor 02</string>
+              <string>Sensor 03</string>
+              <string>Sensor 04</string>
+              <string>Sensor 05</string>
+              <string>Sensor 06</string>
+              <string>Sensor 07</string>
+              <string>Sensor 08</string>
+             </stringlist>
+            </property>
+            <property name="macros" stdset="0">
+             <stringlist>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 01&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON01&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 02&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON02&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 03&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON03&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 04&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON04&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 05&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON05&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 06&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON06&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 07&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON07&quot;}</string>
+              <string>{&quot;DEVICE&quot;:&quot;Sensor 08&quot;, &quot;PV&quot;:&quot;ca://HPO:LPS:TEMPMON08&quot;}</string>
+              <string></string>
+             </stringlist>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="Col3" stretch="4,12">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="AmphosMRC">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Amphos MRCs</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS_MRC01:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="circles" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_11">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>MRC 01</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS_MRC02:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_9">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>MRC 02</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:AMPHOS_MRC03:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_10">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>MRC 03</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="LeakMonitor">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>400</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Leak Monitor</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1,1,1,1,1,1,3,0,1,1">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Monitored Locations:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LEAKS_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_13">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>PyDMLabel</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LOC01</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LEAKS_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="shift" stdset="0">
+               <number>1</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_14">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>PyDMLabel</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LOC02</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LEAKS_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="shift" stdset="0">
+               <number>2</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_15">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>PyDMLabel</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LOC03</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LEAKS_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="numBits" stdset="0">
+               <number>1</number>
+              </property>
+              <property name="shift" stdset="0">
+               <number>3</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_16">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>PyDMLabel</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LOC04</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LEAKS_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="shift" stdset="0">
+               <number>4</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_12">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LOC05</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LEAKS_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="shift" stdset="0">
+               <number>5</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_17">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:LOC06</string>
+              </property>
+              <property name="displayFormat" stdset="0">
+               <enum>PyDMLabel::String</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Hardware:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_33">
+            <item>
+             <widget class="PyDMByteIndicator" name="PyDMByteIndicator_29">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="alarmSensitiveContent" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:TTSIM:DEV01:ERROR_RBV</string>
+              </property>
+              <property name="onColor" stdset="0">
+               <color>
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="offColor" stdset="0">
+               <color>
+                <red>0</red>
+                <green>255</green>
+                <blue>0</blue>
+               </color>
+              </property>
+              <property name="showLabels" stdset="0">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMLabel" name="PyDMLabel_49">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>TraceTek Modbus Connection</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Expert...</string>
+              </property>
+              <property name="filenames" stdset="0">
+               <stringlist>
+                <string>./leak_monitor_expert.ui</string>
+               </stringlist>
+              </property>
+              <property name="macros" stdset="0">
+               <stringlist>
+                <string>{&quot;PV&quot;:&quot;ca://HPO:LPS:LEAK&quot;}</string>
+               </stringlist>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="PyDMPushButton" name="PyDMPushButton">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Latch Reset</string>
+              </property>
+              <property name="channel" stdset="0">
+               <string>ca://HPO:LPS:LEAK:RESET</string>
+              </property>
+              <property name="showConfirmDialog" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="confirmMessage" stdset="0">
+               <string>Are you sure you want to reset leak monitor error?</string>
+              </property>
+              <property name="pressValue" stdset="0">
+               <string>1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
