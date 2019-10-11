@@ -1,0 +1,5 @@
+record(stringin, "HPO:LPS:TEMPMON$(ID):LOC"){
+  field(DESC, "Temp sensor location")
+  info(autosaveFields_pass0, "VAL")
+}
+

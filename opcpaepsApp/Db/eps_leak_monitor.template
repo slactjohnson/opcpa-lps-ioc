@@ -1,0 +1,5 @@
+record(stringin, "HPO:LPS:LEAK:LOC$(ID)"){
+  field(DESC, "Leak detection location")
+  info(autosaveFields_pass0, "VAL")
+}
+

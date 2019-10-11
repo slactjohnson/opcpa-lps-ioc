@@ -1,0 +1,31 @@
+# Forward amphos setpoint records to fields
+record(ao, "HPO:LPS:AMPHOS:MIN_VOLTAGE_RBV:FWD"){
+  field(SCAN, ".1 second")
+  field(DOL, "HPO:LPS:AMPHOS:MIN_VOLTAGE_RBV")
+  field(OMSL, closed_loop)
+  field(OUT, "HPO:LPS:AMPHOS:VOLTAGE_RBV.LOLO")
+  field(FLNK, "HPO:LPS:AMPHOS:VOLTAGE_RBV")
+}
+record(ao, "HPO:LPS:AMPHOS:MIN_NOMINAL_VOLTAGE_RBV:FWD"){
+  field(SCAN, ".1 second")
+  field(DOL, "HPO:LPS:AMPHOS:MIN_NOMINAL_VOLTAGE_RBV")
+  field(OMSL, closed_loop)
+  field(OUT, "HPO:LPS:AMPHOS:VOLTAGE_RBV.LOW")
+  field(FLNK, "HPO:LPS:AMPHOS:VOLTAGE_RBV") 
+}
+
+# Forward OPCPA setpoint records to fields
+record(ao, "HPO:LPS:OPCPA:MIN_VOLTAGE_RBV:FWD"){
+  field(SCAN, ".1 second")
+  field(DOL, "HPO:LPS:OPCPA:MIN_VOLTAGE_RBV")
+  field(OMSL, closed_loop)
+  field(OUT, "HPO:LPS:OPCPA:VOLTAGE_RBV.LOLO")
+  field(FLNK, "HPO:LPS:OPCPA:VOLTAGE_RBV")
+}
+record(ao, "HPO:LPS:OPCPA:MIN_NOMINAL_VOLTAGE_RBV:FWD"){
+  field(SCAN, ".1 second")
+  field(DOL, "HPO:LPS:OPCPA:MIN_NOMINAL_VOLTAGE_RBV")
+  field(OMSL, closed_loop)
+  field(OUT, "HPO:LPS:OPCPA:VOLTAGE_RBV.LOW")
+  field(FLNK, "HPO:LPS:OPCPA:VOLTAGE_RBV")
+}
