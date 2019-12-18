@@ -36,15 +36,16 @@ dbLoadRecords("../../db/eps_temp_monitor.db")
 set_requestfile_path("./", "")
 set_savefile_path("/home/nathan/Desktop/as")
 
-create_monitor_set("settings.req", 1)
-create_monitor_set("setpoints.req", 1)
-
-set_pass0_restoreFile("settings.sav")
-set_pass1_restoreFile("settings.sav")
-set_pass0_restoreFile("setpoints.sav")
-set_pass1_restoreFile("setpoints.sav")
+set_pass0_restoreFile("info_settings.sav")
+set_pass1_restoreFile("info_settings.sav")
+set_pass0_restoreFile("info_positions.sav")
 
 iocInit()
+
+makeAutosaveFiles();
+
+create_monitor_set("info_settings.req", 5)
+create_monitor_set("info_positions.req", 5)
 
 ## Start any sequence programs
 #seq sncopcpaeps,"user=nathan"
