@@ -1,0 +1,1969 @@
+record(bi, "HPO:LPS:AMPHOS:POWER_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bAmphosOn?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+}
+
+record(bi, "HPO:LPS:OPCPA:POWER_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bCarbideOn?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+}
+
+record(bi, "HPO:LPS:AMPHOS_ATTENUATOR:ENABLE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bAmphosAttenuatorEnable?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "DISABLED")
+  field(ONAM, "ENABLED")
+}
+
+record(bi, "HPO:LPS:AMPHOS_SHUTTER:ENABLE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bAmphosShutterEnable?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "DISABLED")
+  field(ONAM, "ENABLED")
+}
+
+record(bi, "HPO:LPS:CARBIDE_SHUTTER:ENABLE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bCarbideShutterEnable?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "DISABLED")
+  field(ONAM, "ENABLED")
+}
+
+record(bi, "HPO:LPS:DUMP_CHILLER_RELAY:ENABLE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bDumpChillerRelay?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "DISABLED")
+  field(ONAM, "ENABLED")
+}
+
+record(bi, "HPO:LPS:BASEPLATE_CHILLER_RELAY:ENABLE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bBaseplateChillerRelay?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "DISABLED")
+  field(ONAM, "ENABLED")
+}
+
+record(bi, "HPO:LPS:AMPHOS_RELAY:ENABLE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_IO.bAmphosRelay?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "DISABLED")
+  field(ONAM, "ENABLED")
+}
+
+record(bi, "HPO:LPS:LEAK:RESET_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bLeakMonitorReset?")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+}
+
+record(bo, "HPO:LPS:LEAK:RESET") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bLeakMonitorReset=")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  info(autosave_pass0, "VAL")
+}
+
+record(bi, "HPO:LPS:AMPHOS:RESET_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bAmphosReset?")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+}
+
+record(bo, "HPO:LPS:AMPHOS:RESET") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bAmphosReset=")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  info(autosave_pass0, "VAL")
+}
+
+record(bi, "HPO:LPS:OPCPA:RESET_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bOpcpaReset?")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+}
+
+record(bo, "HPO:LPS:OPCPA:RESET") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bOpcpaReset=")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  info(autosave_pass0, "VAL")
+}
+
+record(bi, "HPO:LPS:DUMP_CHILLER:RESET_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bDumpChillerReset?")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+}
+
+record(bo, "HPO:LPS:DUMP_CHILLER:RESET") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bDumpChillerReset=")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  info(autosave_pass0, "VAL")
+}
+
+record(longin, "HPO:TTSIM:DEV01:LOC_RES_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTraceTekModbus.nLocationResistance?")
+}
+
+record(bi, "HPO:TTSIM:DEV01:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTraceTekModbus.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(longin, "HPO:LPS:LEAK:LEAKS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbLeakMonitor.nLeakLocations?")
+}
+
+record(bi, "HPO:LPS:LEAK:LOTAO_ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbLeakMonitor.bLeakOpticalTableAmphosOn?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:LEAK:LOTNL_ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbLeakMonitor.bLeakOpticalTableNoLaser?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:LEAK:LOCO_ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbLeakMonitor.bLeakOpcpaCarbideOn?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:LEAK:LUT_ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbLeakMonitor.bLeakUnderTable?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:LEAK:LIR_ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbLeakMonitor.bLeakInsideRacks?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:TEMP01:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop01.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:TEMP01:OVERRIDE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop01.bOperatorOverride?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bo, "HPO:LPS:TEMP01:OVERRIDE") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop01.bOperatorOverride=")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bi, "HPO:LPS:TEMP02:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop02.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:TEMP02:OVERRIDE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop02.bOperatorOverride?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bo, "HPO:LPS:TEMP02:OVERRIDE") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop02.bOperatorOverride=")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bi, "HPO:LPS:TEMP03:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop03.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:TEMP03:OVERRIDE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop03.bOperatorOverride?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bo, "HPO:LPS:TEMP03:OVERRIDE") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop03.bOperatorOverride=")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bi, "HPO:LPS:TEMP04:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop04.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:TEMP04:OVERRIDE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop04.bOperatorOverride?")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bo, "HPO:LPS:TEMP04:OVERRIDE") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbChillerLoop04.bOperatorOverride=")
+  field(ZNAM, "OFF")
+  field(ONAM, "ON")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(bi, "HPO:LPS:BASEPLATE_CHILLER:RESET_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bBaseplateChillerReset?")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+}
+
+record(bo, "HPO:LPS:BASEPLATE_CHILLER:RESET") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bBaseplateChillerReset=")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  info(autosave_pass0, "VAL")
+}
+
+record(ai, "HPO:LPS:AMPHOS:VOLTAGE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbAmphos.fVoltage?")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  field(HOPR, "10.0")
+  field(LOPR, "0.0")
+  field(LLSV, "MAJOR")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:AMPHOS:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbAmphos.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:OPCPA:VOLTAGE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbOpcpa.fVoltage?")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  field(HOPR, "10.0")
+  field(LOPR, "0.0")
+  field(LLSV, "MAJOR")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:OPCPA:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbOpcpa.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON01_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon01.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON01:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon01.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON02_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon02.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON02:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon02.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON03_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon03.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON03:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon03.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON04_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon04.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON04:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon04.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON05_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon05.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON05:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon05.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON06_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon06.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON06:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon06.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON07_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon07.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON07:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon07.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(ai, "HPO:LPS:TEMPMON08_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon08.fTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  field(HOPR, "1000")
+  field(LOPR, "0.0")
+  field(LSV, "MINOR")
+  info(autosave_pass0, "PREC")
+}
+
+record(bi, "HPO:LPS:TEMPMON08:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbTempMon08.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:DUMP_CHILLER:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDumpChiller.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:BASEPLATE_CHILLER:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbBaseplateChiller.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:AMPHOS_MRC01:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbAmphosMRC01.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:AMPHOS_MRC02:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbAmphosMRC02.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:AMPHOS_MRC03:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbAmphosMRC03.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:PLC:ERROR_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.bError?")
+  field(ZSV, "NO_ALARM")
+  field(OSV, "MAJOR")
+  field(ZNAM, "OK")
+  field(ONAM, "ERROR")
+}
+
+record(bi, "HPO:LPS:PLC:SLAVES_OK_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.bAllSlaveStatesGood?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "ERROR")
+  field(ONAM, "OK")
+}
+
+record(bi, "HPO:LPS:PLC:MASTER_OK_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.bMasterStateGood?")
+  field(ZSV, "MAJOR")
+  field(OSV, "NO_ALARM")
+  field(ZNAM, "ERROR")
+  field(ONAM, "OK")
+}
+
+record(longin, "HPO:LPS:PLC:MASTER_DEV_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.nMasterDevState?")
+}
+
+record(longin, "HPO:LPS:PLC:MASTER_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.nMasterState?")
+}
+
+record(waveform, "HPO:LPS:PLC:AMS_ID_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.sNetId?")
+  field(FTVL, "CHAR")
+  field(NELM, "23")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE01:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave01.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE01:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave01.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE01:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave01.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE01:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave01.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE01:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave01.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE01:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave01.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE02:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave02.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE02:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave02.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE02:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave02.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE02:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave02.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE02:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave02.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE02:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave02.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE03:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave03.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE03:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave03.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE03:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave03.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE03:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave03.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE03:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave03.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE03:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave03.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE04:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave04.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE04:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave04.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE04:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave04.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE04:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave04.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE04:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave04.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE04:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave04.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE05:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave05.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE05:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave05.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE05:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave05.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE05:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave05.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE05:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave05.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE05:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave05.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE06:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave06.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE06:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave06.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE06:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave06.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE06:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave06.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE06:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave06.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE06:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave06.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE07:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave07.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE07:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave07.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE07:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave07.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE07:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave07.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE07:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave07.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE07:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave07.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE08:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave08.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE08:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave08.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE08:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave08.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE08:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave08.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE08:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave08.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE08:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave08.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE09:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave09.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE09:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave09.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE09:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave09.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE09:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave09.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE09:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave09.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE09:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave09.nLinkStateFlags?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE10:TYPE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave10.sType?")
+  field(FTVL, "CHAR")
+  field(NELM, "15")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE10:ADDRESS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave10.nAddr?")
+}
+
+record(waveform, "HPO:LPS:PLC:SLAVE10:NAME_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt8ArrayIn")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave10.sName?")
+  field(FTVL, "CHAR")
+  field(NELM, "31")
+}
+
+record(mbbi, "HPO:LPS:PLC:SLAVE10:DEVICE_STATE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave10.nDeviceState?")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(SXVL, "8")
+  field(ZRST, "INVALID")
+  field(ONST, "INIT")
+  field(TWST, "PREOP")
+  field(THST, "BOOTSTRAP")
+  field(FRST, "SAFEOP")
+  field(SXST, "OP")
+  field(ZRSV, "MAJOR")
+  field(ONSV, "MAJOR")
+  field(TWSV, "MAJOR")
+  field(THSV, "MAJOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MINOR")
+  field(SXSV, "NO_ALARM")
+  field(UNSV, "MAJOR")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE10:DEVICE_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave10.nDeviceStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVE10:LINK_STATE_FLAGS_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.stSlave10.nLinkStateFlags?")
+}
+
+record(longin, "HPO:LPS:PLC:SLAVES_COUNT_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.fbDiag.nSlaves?")
+}
+
+record(ai, "HPO:LPS:AMPHOS:MIN_VOLTAGE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stAmphosSP.nMinVoltage?")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:AMPHOS:MIN_VOLTAGE") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stAmphosSP.nMinVoltage=")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:AMPHOS:MIN_NOMINAL_VOLTAGE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stAmphosSP.nMinNominalVoltage?")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:AMPHOS:MIN_NOMINAL_VOLTAGE") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stAmphosSP.nMinNominalVoltage=")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:OPCPA:MIN_VOLTAGE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stOpcpaSP.nMinVoltage?")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:OPCPA:MIN_VOLTAGE") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stOpcpaSP.nMinVoltage=")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:OPCPA:MIN_NOMINAL_VOLTAGE_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stOpcpaSP.nMinNominalVoltage?")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:OPCPA:MIN_NOMINAL_VOLTAGE") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_Laser.stOpcpaSP.nMinNominalVoltage=")
+  field(PREC, "3")
+  field(EGU, "Volts")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON01:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP01.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON01:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP01.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON02:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP02.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON02:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP02.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON03:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP03.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON03:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP03.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON04:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP04.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON04:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP04.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON05:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP05.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON05:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP05.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON06:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP06.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON06:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP06.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON07:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP07.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON07:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP07.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ai, "HPO:LPS:TEMPMON08:MAX_TEMP_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynFloat64")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP08.fMaxTemperature?")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(ao, "HPO:LPS:TEMPMON08:MAX_TEMP") {
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TemperatureMonitor.stTempMonSP08.fMaxTemperature=")
+  field(PREC, "3")
+  field(EGU, "C")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MIN01_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin1?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MIN01") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin1=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MAX01_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax1?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MAX01") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax1=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MIN02_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin2?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MIN02") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin2=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MAX02_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax2?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MAX02") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax2=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MIN03_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin3?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MIN03") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin3=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MAX03_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax3?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MAX03") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax3=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MIN04_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin4?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MIN04") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin4=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MAX04_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax4?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MAX04") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax4=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MIN05_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin5?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MIN05") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin5=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MAX05_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax5?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MAX05") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax5=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MIN06_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin6?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MIN06") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMin6=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longin, "HPO:LPS:LEAK:L_MAX06_RBV") {
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax6?")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}
+
+record(longout, "HPO:LPS:LEAK:L_MAX06") {
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_TraceTek.stLeakMonitorBoundaries.nLMax6=")
+  info(autosave_pass0, "VAL")
+  info(autosave_pass1, "VAL")
+}

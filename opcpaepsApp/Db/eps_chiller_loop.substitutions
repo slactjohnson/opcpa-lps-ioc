@@ -1,0 +1,8 @@
+file eps_chiller_loop.template {
+  pattern
+    {ID}
+    {"01"}
+    {"02"}
+    {"03"}
+    {"04"}
+}

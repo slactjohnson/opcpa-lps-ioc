@@ -1,0 +1,10 @@
+file eps_leak_monitor.template {
+  pattern
+    {ID}
+    {"01"}
+    {"02"}
+    {"03"}
+    {"04"}
+    {"05"}
+    {"06"}    
+}

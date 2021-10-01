@@ -1,0 +1,5 @@
+record(stringin, "HPO:LPS:TEMP$(ID):LOC"){
+  field(DESC, "Chiller Loop location")
+  info(autosaveFields_pass0, "VAL")
+}
+
